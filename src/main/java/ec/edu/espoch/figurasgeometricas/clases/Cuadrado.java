@@ -8,6 +8,10 @@ package ec.edu.espoch.figurasgeometricas.clases;
  *
  * @author SO-LAB1-PC14
  */
-public class Cuadrado {
-    
+public class Cuadrado extends Rectangulo {
+  
+    public Cuadrado(double lado){
+      super(lado,lado);
+      
+  }  
 }
