@@ -8,10 +8,28 @@ package ec.edu.espoch.figurasgeometricas.clases;
  *
  * @author SO-LAB1-PC14
  */
-public class Cuadrado extends Rectangulo {
+public class Cuadrado {
   
-    public Cuadrado(double lado){
-      super(lado,lado);
-      
+    public double lado ;
+    
+    
+    public Cuadrado(double lado ){
+      this.lado=lado;
+    
+      }
+
+    public double getLado() {
+        return lado;
+    }
+
+    public void setLado(double lado) {
+        this.lado = lado;
+    }
+   public double CalcularArea(){
+       return lado*lado;
+   } 
+   public double CalcularPerimetro (){
+       return 4*lado;
+   }
   }  
-}
+

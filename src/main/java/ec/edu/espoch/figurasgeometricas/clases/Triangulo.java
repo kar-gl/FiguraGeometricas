@@ -9,6 +9,7 @@ package ec.edu.espoch.figurasgeometricas.clases;
  * @author SO-LAB1-PC14
  */
 public class Triangulo {
+    //TRIANGULO RECTANGULO
     public double base;
     public double altura;
 
@@ -29,7 +30,7 @@ public class Triangulo {
     }
 
     public double calcularHipotenusa() {
-        return Math.sqrt(base * base + altura * altura);
+        return Math.hypot(base, altura);
     }
 
     public String determinarTipo() {
