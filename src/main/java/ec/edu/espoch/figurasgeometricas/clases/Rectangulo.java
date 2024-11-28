@@ -4,6 +4,8 @@
  */
 package ec.edu.espoch.figurasgeometricas.clases;
 
+import java.util.Scanner;
+
 /**
  *
  * @author SO-LAB1-PC13
@@ -26,6 +28,25 @@ public Rectangulo(double base,double altura){
     public double calcularPerimetro() {
         return 2 * (base + altura);
     }
+   public static void main(String[] args) {
+       
+        Scanner scanner = new Scanner(System.in); 
+
+        
+        System.out.println("Ingrese la base del rectángulo:");
+        double baseIngr = scanner.nextDouble();
+
+        System.out.println("Ingrese la altura del rectángulo:");
+        double alturaIngr = scanner.nextDouble(); 
+
+        
+        Rectangulo rectangulo = new Rectangulo(baseIngr, alturaIngr);
+
+       
+        System.out.println("El área del rectángulo es: " + rectangulo.calcularArea());
+        System.out.println("El perímetro del rectángulo es: " + rectangulo.calcularPerimetro());
+    }
+ 
 }
     
 

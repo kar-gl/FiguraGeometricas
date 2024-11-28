@@ -4,6 +4,8 @@
  */
 package ec.edu.espoch.figurasgeometricas.clases;
 
+import java.util.Scanner;
+
 /**
  *
  * @author SO-LAB1-PC14
@@ -43,4 +45,27 @@ public class Triangulo {
             return "Escaleno";
         }
     }
+  public static void main(String[] args) {
+
+        
+       Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.println("Ingrese la base del triángulo:");
+        double baseIngr = scanner.nextDouble();
+
+        System.out.println("Ingrese la altura del triángulo:");
+        double alturaIngr = scanner.nextDouble();
+
+       
+        Triangulo triangulo = new Triangulo (baseIngr, alturaIngr);
+
+    
+        System.out.println("El área del triángulo es: " + triangulo.calcularArea());
+        System.out.println("El perímetro del triángulo es: " + triangulo.calcularPerimetro());
+        System.out.println("La hipotenusa del triángulo es: " + triangulo.calcularHipotenusa());
+        System.out.println("El tipo de triángulo es: " + triangulo.determinarTipo());
+    }  
 }
+
+
