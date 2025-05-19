@@ -8,9 +8,10 @@ import java.util.Scanner;
 
 /**
  *
- * @author SO-LAB1-PC13
+ * @author Marjorie
  */
 public class Circulo{
+    
 public double radio;
 
 public Circulo(double radio){
@@ -24,10 +25,10 @@ return 2* Math.PI*radio;
 }
 public static void main(String[] args) {
 
-Scanner radioing = new Scanner(System.in);
+Scanner radio = new Scanner(System.in);
 
 System.out.println("Ingrese el valor del radio del círculo:");
-double radioIngresado= radioing.nextDouble();
+double radioIngresado= radio.nextDouble();
 
 Circulo circulo = new Circulo(radioIngresado);
 

@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 /**
  *
- * @author SO-LAB1-PC14
+ * @author Marjorie
  */
 public class Triangulo {
-    //TRIANGULO RECTANGULO
+   
     public double base;
     public double altura;
-
+    //Constructor
     public Triangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
@@ -35,7 +35,7 @@ public class Triangulo {
         return Math.hypot(base, altura);
     }
 
-    public String determinarTipo() {
+    public String determinarTipoTriangulo() {
         double hipotenusa = calcularHipotenusa();
         if (base == altura && altura == hipotenusa) {
             return "Equilátero";
@@ -64,7 +64,7 @@ public class Triangulo {
         System.out.println("El área del triángulo es: " + triangulo.calcularArea());
         System.out.println("El perímetro del triángulo es: " + triangulo.calcularPerimetro());
         System.out.println("La hipotenusa del triángulo es: " + triangulo.calcularHipotenusa());
-        System.out.println("El tipo de triángulo es: " + triangulo.determinarTipo());
+        System.out.println("El tipo de triángulo es: " + triangulo.determinarTipoTriangulo());
     }  
 }
 

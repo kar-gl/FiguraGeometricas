@@ -8,27 +8,20 @@ import java.util.Scanner;
 
 /**
  *
- * @author SO-LAB1-PC14
+ * @author Marjorie
  */
 public class Cuadrado {
   
-    public double lado ;
+    public double lado;
     
-    
+    //Constructor
     public Cuadrado(double lado ){
       this.lado=lado;
     
       }
-
-    public double getLado() {
-        return lado;
-    }
-
-    public void setLado(double lado) {
-        this.lado = lado;
-    }
    public double CalcularArea(){
        return lado*lado;
+       
    } 
    public double CalcularPerimetro (){
        return 4*lado;
